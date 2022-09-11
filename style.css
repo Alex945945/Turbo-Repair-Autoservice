@@ -81,8 +81,25 @@ a{
     background-color: black;
     border-radius: 40px;
     padding: 10px;
+    position: relative;
+    animation: 2s render linear;
 }
-
+.m1{
+    position: relative;
+    animation: 0.5s render linear;
+}
+.m2{
+    position: relative;
+    animation: 1s render linear;
+}
+.m3{
+    position: relative;
+    animation: 1.5s render linear;
+}
+.m4{
+    position: relative;
+    animation: 2s render linear;
+}
 .calm{
     font-size: 30px;
     margin-top: 70px;
@@ -91,8 +108,24 @@ a{
     width: 190px;
     padding: 10px;
     border-radius: 40px;
+    position:relative;
+    top: 0;
+    left: 0;
+    animation: 2s render linear;
 }
-
+@keyframes render{
+    0%{
+        top: -20px;
+        opacity: 0;
+    }
+    50%{
+        top: -10px;
+    }
+    100%{
+        top:0px;
+        opacity: 1;
+    }
+}
 input[type=text],
 select,
 textarea {
@@ -102,6 +135,8 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical;
+    position: relative;
+    animation: 2s render linear;
 }
 
 label {
@@ -189,6 +224,9 @@ main{
     justify-content: space-around;
     align-items: center;
     width: 170px;
+    position: relative;
+    animation: 2s render linear;
+    animation-delay: 1.5s;
 }
 .preim-text{
     margin-top: 20px;
@@ -327,7 +365,7 @@ footer a:hover {
         .footer-all {
             flex-direction: column;
         }
-    
+
         .footer-info {
             margin-left: 70px;
         }
